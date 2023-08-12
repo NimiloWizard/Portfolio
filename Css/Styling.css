@@ -735,11 +735,11 @@ footer span a:hover{
 
     .imge-Container .About-image{
         height: 400px;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .navbar-toggler{
-        margin-right: 300px;
+        margin-right: 100px;
     }
 
 }
