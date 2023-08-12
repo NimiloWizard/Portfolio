@@ -741,6 +741,10 @@ footer span a:hover{
         margin-right: -20px;
     }
 
+ .about-info #MyName{
+        margin-top: 20px;
+    }
+
 @media only screen and (min-width: 350px) and (max-width: 455px){
 
     .imge-Container #About-image{
@@ -750,6 +754,10 @@ footer span a:hover{
 
     .navbar-toggler{
         margin-right: -20px;
+    }
+
+    .about-info #MyName{
+        margin-top: 20px;
     }
 
 }
