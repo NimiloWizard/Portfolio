@@ -74,8 +74,8 @@ section::before{
     z-index: -1;
     background: linear-gradient(
         0deg,
-         rgb(0 0 0 /.85),
-         rgb( 0 0 0 /.9)
+         rgb(0 0 0 /.8),
+         rgb( 0 0 0 /.5)
     );
     
 }
@@ -695,7 +695,9 @@ footer span a:hover{
         width: 100%;
     }
 
-    
+     .navbar-toggler{
+        margin-right: 300px;
+    }
 }    
 
 
@@ -703,6 +705,11 @@ footer span a:hover{
     .navbar-nav{
         text-align: center;
     }
+
+     .navbar-toggler{
+        margin-right: 300px;
+    }
+	
     .carousel-caption{
         bottom: 125px;
     }
@@ -722,4 +729,17 @@ footer span a:hover{
         margin-bottom: 30px;
         
     }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 620px){
+
+    .imge-Container .About-image{
+        height: 400px;
+        margin-left: 20px;
+    }
+
+    .navbar-toggler{
+        margin-right: 300px;
+    }
+
 }
