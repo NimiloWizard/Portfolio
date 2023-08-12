@@ -1,0 +1,725 @@
+*{
+    font-family: Montserrat;
+    
+}
+
+body{
+    background: f1fbff;
+    
+}
+/*
+.imge-Container {
+	margin: 0 auto;
+	position: relative;
+	width: 0px;
+	font-size:.8125em;
+
+#gallery {
+    height:496px;
+    overflow:hidden;
+    background:url(../images/gallerry-bg.gif) 0 0 repeat-x;
+}
+
+.roundabout-holder  { 
+	width:850px;
+	height:496px;
+	margin:0 auto;
+}
+.roundabout-moveable-item {
+   width: 646px;
+   height: 416px;
+   cursor: pointer;
+	 border:3px solid #ccc;
+	 border:3px solid rgba(0, 0, 0, 0.08);
+   border-radius:4px;
+	 -moz-border-radius:4px;
+	 -webkit-border-radius:4px;
+}
+	.roundabout-moveable-item img{
+		width:100%;
+	}
+.roundabout-in-focus {
+	border:3px solid rgba(0, 0, 0, 0.2);
+}
+
+}
+*/
+.Title{
+    font: 30px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------Background Setting--------------------------*/
+
+.section-padding{
+    padding: 90px 40px;
+   
+}
+
+section {
+    
+	padding: 20px;
+    display: flex;
+	/*background: linear-gradient(rgba(250, 252, 252, 0.986), rgba(253, 252, 252, 0.3));  */
+	background: url("../Images/AIWallpaper10.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+    isolation: isolate;
+}
+section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        0deg,
+         rgb(0 0 0 /.85),
+         rgb( 0 0 0 /.9)
+    );
+    
+}
+
+.card{
+    backdrop-filter: blur(14px);
+    background-color: rgba(251, 240, 240, 0.2);
+    box-shadow: 15px 15px 40px rgba(59, 56, 56, 0.15);
+}
+
+.card .card-body{
+   
+    box-shadow: 16px 14px 20px rgb(126, 124, 124);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.h1{
+    color: rgb(247, 246, 246);
+}
+
+.h2{
+    color: black;
+}
+
+
+/*-----------------------------------------NavBar--------------------------*/
+.navbar{
+    background: url("../Images/AIWallpaper10.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;position: relative;
+    isolation: isolate;
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        0deg,
+         rgb(0 0 0 /.6),
+         rgb( 0 0 0 /.8)
+    );
+}
+
+.navbar p{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(241, 243, 242);
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+}
+.navbar  .nav-item a:hover{
+    color: blue;
+}
+
+.navbar  .nav-item a{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(251, 248, 248);
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light navbar-brand{
+    color: rgb(252, 250, 250);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light navbar-brand:focus,
+.navbar-light navbar-brand:hover{
+    color: black;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: black;   
+}
+
+/*-----------------------------------------My Name ----------------------------*/
+
+
+#MyName h1{
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(54, 96, 12);
+    padding-top: 30px; 
+    padding-bottom: 10px;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration:wavy;
+    
+}
+
+#Position h4{
+   padding-bottom: 50px ;
+} 
+
+
+/*-----------------------------------------About--------------------------*/
+.imge-Container .About-image{
+    height: 400px;
+    margin-left: 40px;
+}
+
+.imge-Container .About-image img{
+    height: 100%;
+    filter: grayscale(90%);
+    transition: .3s;
+}
+.imge-Container .About-image img:hover{
+    filter: grayscale(0);
+    transform: scale(1.03) rotate(7deg);
+}
+
+.About{
+    margin-top: 0px;
+}
+.about-info p{
+    padding-top: 10px;
+    font-size: 15px;
+    position: relative;
+    flex-basis: 60%;
+
+ }
+    .about-info p span{
+    color: rgb(226, 80, 43);
+    font-weight: 600;
+    font-size: 18px;
+}
+.about-info #email span{
+    color: rgb(40, 186, 101);
+    font-weight: 600;
+    font-size: 18px;
+}
+.about-info #about-contact-details{
+    margin-top: 30px;
+}
+.about-info p {
+    color:white;
+}
+    .about-info .about-drop{
+    flex-basis: 60%;
+    transition: all .40s ease; 
+
+}
+    .about-info .about-drop1{
+    color: blue;
+}
+
+    .about-info ul{
+    padding-left: 30px;
+}
+
+
+
+.About .about-drop{
+   
+    box-shadow: 16px 14px 20px black;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.About .about-drop::before{
+   
+    content: "";
+    background-image: comic-gradient(
+       rgb(222, 228, 228) 20deg,
+        transparent 120deg
+    );
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+    
+}
+
+
+
+/*-----------------------------------------Certificates--------------------------*/
+
+
+
+.list .List-of-Certificate{
+    align-items: left;
+    margin-right: 100px ;
+    color: rgb(57, 16, 242);
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.list  p{
+    padding: 10, 10px, 0, 0px;
+    margin-left: 30px;
+    font-size: 15px;
+    color: rgb(184, 189, 187);
+    font-weight: bold;
+    
+}
+.list #Schoolname{
+    padding-top: 0px;
+    margin-bottom: 35px;
+    margin-left: 100px;
+    font-size: 12px;
+    color: rgb(64, 107, 8);
+}
+
+.carousel-item .d-block{
+    height: 75vh;
+}
+
+.carousel-inner .carousel-item{
+    height: 85vh;
+    min-height: 280px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0 ,0,0.2);
+    z-index: 1;
+}
+
+/*-----------------------------------------Services--------------------------*/
+#Services-col{
+    margin-right: 30px;
+}
+.Services .card-body{
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    font-size: 50px;
+    backdrop-filter: blur(14px);
+    
+    transition: all 0.3s ease;
+    
+}
+
+.Services .card-body:hover{
+    transform: scale(1.03); 
+}
+
+
+#Service-bg-image1 .box{
+    transition: all 0.3s ease;
+}
+#Service-bg-image1 .box:hover{
+    transform: translatey(-25px);
+}
+
+
+#Service-bg-image2 .box{
+    transition: all 0.3s ease;
+}
+#Service-bg-image2 .box:hover{
+    transform: translatey(-25px);
+}
+
+#Service-bg-image3 .box{
+    transition: all 0.3s ease;
+}
+#Service-bg-image3 .box:hover{
+    transform: translatey(-25px);
+}
+
+
+.Services .card{
+    box-shadow: 15px 15px 40px rgba(0,0 ,0,0.15);
+}
+
+.Services .lead {
+    font-size: 16px;   
+}
+
+#Services-btn {
+    border-bottom-right-radius: 40px;
+}
+
+
+/*-----------------------------------------My Projects---------------------------------*/
+
+.MyProject .lead{
+    font-size: 15px;
+}
+.img-area #Myproject-bg-1{
+    width: 500px;
+    border-top-left-radius: 20%;
+    background: url("../Images/WebDevImage.png") no-repeat center;
+}
+.MyProject .card-body .img-area{
+    transition: all 0.3s ease;
+}
+.MyProject .card-body .img-area:hover{
+   transform: scale(1.10);
+}
+
+.MyProject .card{
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.0);
+    box-shadow: 15px 15px 40px rgba(247, 244, 244, 0.15);
+}
+.MyProject .card-body{
+    
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    backdrop-filter: blur(14px);
+    background-color: transparent;
+    box-shadow: 15px 15px 45px rgba(0,0 ,0,0.12);
+   
+}
+
+.MyProject #WebDev-Item1 #card{
+
+    width: 180px;
+    align-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.MyProject #WebDev-Item1 #box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+    background: transparent;
+}
+.MyProject #WebDev-Item1 #box img{
+    
+   margin-top: 20px;
+    margin-left: 50px;
+}
+.MyProject #WebDev-Item1 p span{
+    color: rgb(17, 140, 35);
+    font-size: 18px;
+    font-weight: bold;
+}
+.MyProject #WebDev-Item1 p{
+    padding-top: 20px;
+}
+.MyProject #WebDev-Item2 p{
+    padding-top: 20px;
+}
+.MyProject #WebDev-Item1 .box{
+    transition: all 0.3s ease;
+}
+.MyProject #WebDev-Item1 .box:hover{
+    transform: scale(1.3);
+}
+.MyProject #WebDev-Item2 .box{
+    transition: all 0.3s ease;
+}
+.MyProject #WebDev-Item2 .box:hover{
+    transform: scale(1.3);
+}
+.MyProject #Software-Dev .box{
+    transition: all 0.3s ease;
+}
+
+.MyProject #Software-Dev .box:hover{
+    transform: scale(1.3);
+}
+
+#Software-Dev span{
+    color: rgb(220, 67, 7);
+}
+#Software-Dev #POStext{
+    color: blue;
+}
+
+.MyProject #Graphix-Dsgn .box img {
+    padding: 20PX;
+}
+.MyProject #GraphicsDsgn-Item1 .box{
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+.MyProject #GraphicsDsgn-Item1 .box:hover{
+    transform: scale(1.1);
+}
+
+.MyProject #Graphix-Dsgn #Bannertext{
+    color: blue;
+}
+.MyProject #Graphix-Dsgn.BannerDesc{
+    padding-top: 20px;
+}
+/*-----------------------------------------Team---------------------------------*/
+
+.Team .card-body i{
+    font-size: 20px;
+    
+
+}
+.Team .card-body{
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+    background-color: rgb(210, 221, 249);
+    margin-bottom: 30px;
+}
+
+.Team .card{
+    box-shadow: 15px 15px 40px rgba(0,0 ,0,0.15);
+    backdrop-filter: blur(14px);
+    background-color: transparent;
+    box-shadow: 15px 15px 40px rgba(0,0 ,0,0.15);
+}
+
+
+
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+/*----------------------------------------- Inquiry -----------------------------------------*/
+
+
+.Inquiry {
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	border: dotted;
+    
+    
+}
+
+.Inquiry .title h2{ 
+   text-align: center;
+   font: 30px;
+   font-weight: bold;
+   color: white;
+}
+
+
+
+.Inquiry .Inquiry-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.Inquiry .Inquiry-content .column {
+   width: calc(50% - 30px);
+}
+.Inquiry .Inquiry-content .column .text{
+	color: red;
+    font-size: 20px;
+	font-weight: 600;
+	margin: 10px 0;
+
+}
+.Inquiry .Inquiry-content .left p{
+	font-size: 18px;
+	text-align: justify;
+}
+.Inquiry .Inquiry-content .row{
+	display: flex;
+	height: 65px;
+	align-items: center;
+	justify-content: left;
+}
+.Inquiry .Inquiry-content .head{
+	color: red;
+	font-weight: 600;
+	padding: 5px 0;
+	
+
+}
+.Inquiry .Inquiry-content .subhead, #text{
+	font-weight: 600;
+	justify-content: left;
+    color: white;
+}
+
+.Inquiry .Inquiry-content .left img{
+	height: 3px;
+	width: 30px;
+    z-index: 3;
+   
+}
+
+
+
+.Inquiry .right form .fields{
+    display: flex;
+}
+.Inquiry .right form .field ,
+.Inquiry .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom:5px ;
+}
+
+.Inquiry .right form .textarea {
+	height: 100px;
+	width: 100%;
+}
+.Inquiry .right form .name{
+   margin-right: 10px;
+}
+.Inquiry .right form .email{
+   margin-left: 10px;
+}
+.Inquiry .right form .field input, 
+.Inquiry .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+}
+.Inquiry .right form .field input:focus, 
+.Inquiry .right form .textarea textarea:focus{
+   border-color: red;
+}
+.Inquiry .right form .textarea textarea{
+	padding-top: 10px;
+	resize: none;
+}
+.Inquiry .right form .button button{
+	height: 50px;
+	width: 150px;
+	background: red;
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 6px;
+	border-color: red;
+	cursor: pointer;
+
+}
+.Inquiry .right form .button button:hover{
+   background: blue;
+   color: white;
+   border-color: blue;
+
+}
+
+.Inquiry #GetInTouch{
+    color:blue;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+/*-------------------------------------Styles for Footer Section---------------------------------*/
+
+footer {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	background: black;
+	color: white;
+	padding: 30px 25px;
+}
+footer span a{
+	color: red;
+}
+footer span a:hover{
+   text-decoration: underline;
+}
+
+/*-----------------------------------------Responsive (Media Query)---------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+    .carousel-caption{
+        bottom: 370px;
+    } 
+
+    .carousel-caption p{
+        width: 100%;
+    } 
+    
+    .card{
+        margin-bottom: 30px;
+        
+    }
+
+    .img-area img{
+        width: 100%;
+    }
+
+    
+}    
+
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px 15px;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 12px;
+    }
+
+    .card{
+        margin-bottom: 30px;
+        
+    }
+}
