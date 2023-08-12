@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Styling.css">
+    <link rel="stylesheet"  href="Css/animate.min.css">
+    <link rel="stylesheet" href="Css/W3.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+     
+  <script type="text/javascript" src="Js/jquery-1.4.2.min.js" ></script>
+   <script type="text/javascript" src="Js/rounabout.js"></script>
+  <script type="text/javascript" src="Js/RoundAbout_shapes.js"></script>
+  <script type="text/javascript" src="Js/gallery_init.js"></script>
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="navbar">
+        <div class="container" >
+             <p>      
+              PORTFOLI<a class="navbar-brand" href="#"><img src="Images/Logo.png"></a>
+            </p>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                       aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                       
+                        <li class="nav-item">
+                          <a class="nav-link" href="#About">About Me</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#CertificationSection">Certificates</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#MyProject">My Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#About">Contact Me</a>
+                        </li> 
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Inquiry">Inquiry</a>
+                        </li> 
+                  </ul>
+                
+                </div>
+                
+        </div>
+              
+              
+              
+     </nav>
+    
+  
+   
+  
+  <!------------------------------------------About Section---------------------------------------------->
+
+<section id="About" class="About section-padding">
+
+  <div class="Container">
+
+      <div class="row">
+
+            <div class="col-lg-4 col-md-12 col-12">
+              <div class="NameCaption text-white" id="MyName">
+                    <h1 class="NameStyle">Nimilo Ocdol</h1>
+              </div>
+            </div>
+            
+
+              <div class="row">
+                <div class="col-lg-8 col-md-12 col-12" >
+                  <div class="Position text-white" id="Position">
+                        <h4 class="Position"> Web Developer / Software Developer / Graphics Designer</h4>
+                  </div>
+                </div>
+              </div>
+
+       </div>
+  </div>
+
+     <div class="imge-Container">
+
+          <div class="row">
+             
+                <div class="col-lg-4 col-md-12 col-12">
+                      <div class="About-image">
+                          <img src="Images/Aboutpic.jpeg" class="img-fluid" alt="...">
+                      </div>
+                </div>
+            
+
+
+          
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 ">
+
+                      <div class="about-info">                 
+                    
+                            <button onclick="AboutFunction('who')" class="about-drop w3-button w3-block w3-center w3-large" 
+                            style="font-weight:bold; background: linear-gradient(45.59deg, #bcb8f8 0%, #4f7cf7 50.53%, #5a64fa 50.52%);" >
+                            About Me</button>
+
+                            <div id="who" class=" w3-container w3-show">
+                              <p >Hi! <span>Nimilo Ocdol</span> here, at your service! I'm a graduate of BS Computer Science
+                                in the field of Software Development in which I really love to do. I worked in different
+                                kinds of industries including Food Industry, Marine Industry and BPO as well. I had a freelance 
+                                Software Pogramming job long before and just recently I obtained my WebDev certification to level up
+                                my skills.</p>
+                                      
+                             </div>
+
+                            <button onclick="AboutFunction('what')" class="about-drop w3-button w3-block w3-center  w3-large" 
+                            style="font-weight:bold; background: linear-gradient(245.59deg, #bcb8f8 0%, #4f7cf7 50.53%, #5a64fa 50.52%);" >
+                            What I do?</button>
+
+                            <div id="what" class="w3-container w3-hide">
+                               <p>Primarily, Web Development, Software Programming and Graphics Designs
+                                are my top priorities. Those are my passion and never get tired of it</p></li>
+                               <p>While I also have other types of work experiences, being in IT Industry
+                                is the real deal for me.</p>
+                               <p>I'm still studying at the moment to deepen my knowledge and I'm planing to take 
+                                Masteral Degree in the near future. I'm open for any work collaboration,
+                                just drop me a message!</p> 
+                            </div>
+
+                            <button onclick="AboutFunction('why')" class="about-drop w3-button w3-block w3-center  w3-large"
+                            style="font-weight:bold; background: linear-gradient(245.59deg, #bcb8f8 0%, #4f7cf7 50.53%, #5a64fa 50.52%);;" >
+                            Contact Me</button>
+
+                            <div id="why" class="w3-container w3-hide">  
+                              <div id="about-contact-details">
+                                  <p>
+                                    <img  src="Images/RedArrow.png" alt="...">   
+                                    <a class="Contact-Image1" href="https://www.facebook.com/profile.php?id=100040160618866&mibextid=ZbWKwL" 
+                                        target="_blank"> My OFFICIAL WEBSITE</a>
+                                  </p>   
+                                  <p>
+                                    <img src="Images/RedArrow.png" alt="...">   
+                                    <a class="Contact-Image1" href="https://www.facebook.com/profile.php?id=100040160618866&mibextid=ZbWKwL" 
+                                        target="_blank"> My FB ACCOUNT</a>
+                                  </p>    
+
+                                  <div id="email"> 
+                                       <p>
+                                          <img src="Images/RedArrow.png" alt="...">   
+                                          <span>Email Address:     ncowork2020@gmail.com</span>
+                                        </p> 
+                                    
+                                  </div>
+                                </div>
+                            </div> 
+
+                     </div>
+
+                </div>
+                
+          </div>
+      </div>
+</section>
+
+
+   <!------------------------------------------Certifications------------------------------------------>
+<section class="CertificationSection section-padding" id="CertificationSection">
+      <div class="Container">
+          
+          <div class="row">
+
+                <div class="col-lg-4 col-md-12 col-12" >
+                    <div class="list">
+
+                      <h2 class="List-of-Certificate">List of Certificates</h2>  
+
+                        <p class="Course1">
+                          <img src="Images/RedArrow.png" alt="...">   
+                           BS COMPUTER SCIENCE Diploma 
+                        </p>    
+                        <p class="Schoolname1" id="Schoolname">- STI College (2004)</p>
+                        
+                        <p class="Course2">
+                          <img src="Images/RedArrow.png" alt="..."> 
+                          WEB DEVELOPMENT Certificate  
+                        </p>  
+                        <p class="Schoolname2" id="Schoolname">- LCT Learn Computer Today (2003)</p>
+
+                        <p class="Course3">
+                          <img src="Images/RedArrow.png" alt="..."> 
+                          PHOTOSHOP Certificate 
+                          
+                        </p> 
+                        <p class="Schoolname3" id="Schoolname">- LCT Learn Computer Today (2003)</p>
+
+                        <p class="Course4">
+                          <img src="Images/RedArrow.png" alt="..."> 
+                          GRAPHICS DESIGN Certificate      
+                        </p>       
+                        <p class="Schoolname4" id="Schoolname">- LCT Learn Computer Today (2003)</p>   
+
+                    </div>
+                </div>
+              
+
+          
+              <div id="carouselExampleCaptions" class="carousel col-lg-8 col-md-12 col-12 ps-lg-5">
+
+                   
+
+                    <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+
+                          
+                    <div class="carousel-inner">
+                         
+                          <div class="carousel-item active">  
+                                  <img src="Images/BSCSdIPLOMA.jpg" class="d-block w-100  img-fluid" alt="...">                                          
+                          </div>
+
+                          <div class="carousel-item ">               
+                                 <img src="Images/WebDev.jpg" class="d-block w-100  img-fluid" alt="...">                       
+                          </div>
+
+                          <div class="carousel-item">
+                                 <img src="Images/Photoshop.jpg" class="d-block w-100  img-fluid" alt="...">
+                          </div>
+
+                          <div class="carousel-item">
+                                <img src="Images/GraphicDesgnConcept.png" class="d-block w-100  img-fluid" alt="...">
+                          </div>
+                          
+                    </div>
+                   
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+
+              </div> 
+          </div> 
+
+      </div>  
+</section> 
+
+  <!------------------------------------------Services-------------------------------------------->
+
+  <section id="Services" class="Services section-padding">
+      <div class="Container">
+
+            <div class="row">
+              <div class="col-md-12">
+                  <div class="section-header text-white text-center pb-5">
+                        <h2 class="Title">Services I can Offer</h2>
+                        <p>Below are the jobs that I can work with. <br> Please feel free to check them out.</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+                  <div class="col-12 col-md-12 col-lg-4 " >
+                    <div class="card text-white text-center bg-dark pb-2 " id="Card-Service1">
+                        <div class="card-body" id="Service-bg-image1">
+                          
+                          <hr>
+
+                          <div class="box" id="box">
+                                <div class="ServicesWebDev mb-4" id="services-col">
+                                  <img src="Images/Services-BG-Img.png" class="img-fluid" alt="...">
+                              </div>
+                          </div>
+
+                           <hr>
+                           
+                           <i class="bi bi-subtract text-white" id="Services-Icon1"></i>
+                           
+                           <hr> 
+
+                            <h3 class="card-title">Front-End Development</h3>
+                            <p class="lead text-white" >If you need an interactive website tailored fit to the 
+                              demand of your business or even personal use .</p>
+                              <button id="Services-btn" class="about-drop w3-button w3-block w3-center w3-large bg-warning text-dark" 
+                              style="font-weight:bold;"> Read More </button>
+                        </div>
+                    </div>
+                  </div>    
+      
+
+               <div class="col-12 col-md-12 col-lg-4" >
+                <div class="card text-white text-center bg-dark pb-2" id="Card-Service3" >
+                    <div class="card-body" id="Service-bg-image2">
+
+                        <hr>
+                        
+                        <div class="box" id="box">
+                          <div class="ServicesWebDev mb-4">
+                            <img src="Images/Services-BG-Img2.png" class="img-fluid" alt="...">
+                          </div>
+                        </div>
+
+                         <hr>
+
+                         <i class="bi bi-playstation text-white"></i>
+
+                        <hr> 
+
+                        <h3 class="card-title">Desktop Application</h3>
+                        <p class="lead text-white">I can make running desktop application such as POS, 
+                          Reservation, Billing & Payment System to name a few</p>               
+                        <button  id="Services-btn" class="about-drop w3-button w3-block 
+                          w3-center w3-large bg-warning text-dark" 
+                          style="font-weight:bold;"> Read More </button>
+                    </div>
+                </div>
+              </div>
+
+                  <div class="col-12 col-md-12 col-lg-4" >
+                    <div class="card text-white text-center bg-dark pb-2" id="Card-Service3" >
+                        <div class="card-body" id="Service-bg-image3">
+
+                            <hr>
+                            
+                            <div class="box" id="box">
+                              <div class="ServicesWebDev mb-4">
+                                  <img src="Images/Services-BG-Img3.png" class="img-fluid" alt="...">
+                              </div>
+                            </div>
+
+                             <hr>
+
+                            <i class="bi bi-slack text-white"></i>
+
+                            <hr> 
+
+                            <h3 class="card-title">Graphics Design</h3>                         
+                            <p class="lead text-white">Making designs for your 
+                              upcoming Birthday parties, Wedding, Graduation and other occations .</p>
+                            <button  id="Services-btn"  class="about-drop w3-button w3-block w3-center w3-large bg-warning text-dark" 
+                             style="font-weight:bold;"> Read More </button>
+
+                        </div>
+                    </div>
+                  </div>
+                     
+            </div>
+        
+      </div>
+</section>
+
+  <!------------------------------------------My Projects----------------------------------------->
+
+  <section id="MyProject" class="MyProject section-padding">
+    <div class="Container">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-header text-white text-center pb-5">
+                <h2 class="Title">My Projects</h2>
+                <p>Sample projects are segregated accordingly. <br> Please feel free to check them out.</p>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+                <div class="col-12 col-md-12 col-lg-4" i>
+                  <div class="card text-white text-center  pb-2">
+
+                      <div class="card-body text-dark" id="card-body1">
+
+                              <div class="img-area mb-4">
+                                    <img src="Images/WebDevImage.png" class="img-fluid" alt="...">
+                              </div>
+
+                              <h3 class="card-title text-white" style="text-decoration: underline;"> Web Development  </h3>
+                              
+                              <p class="lead text-white"> I have created websites using HTML, CSS,
+                                JQuery, PHP, Bootstrap and WordPress. Below are the sample projects
+                                in my bucket list.
+                              </p>
+            
+ <!---------------------------Web Dev Learn More button------------------------------>       
+
+                              <button  onclick="AboutFunction('Web-Dev')" class="about-drop w3-button w3-block w3-center w3-large bg-warning text-dark" 
+                              style="font-weight:bold;">Learn More...</button>
+
+                              <div id="Web-Dev" class="w3-container w3-hide">
+
+                                 <div id="WebDev-Item1" class="WebDev-Item1">
+                                  
+                                      <div class="row" id="Project-SubImg">
+                                        <div class="card" id="card">
+                                           <div class="box" id="box">
+                                            <a  href="https://nimilowizard.github.io/Main/Index.html" target="_blank">
+                                              <img src="Images/FullStackWebImg1.png" alt="..." class="img-fluid" alt="..."></a>
+                                           </div>
+                                        </div>
+                                        <div class="card" id="card">
+                                           <div class="box" id="box">
+                                            <a  href="https://nimilowizard.github.io/Main/Index.html" target="_blank">
+                                              <img src="Images/FullStackWebImg2.png" alt="..." class="img-fluid" alt="..."></a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <p class="text-white"> This is the official website of <span>FULLSTACK </span>Online Learning School
+                                        that caters IT courses. Created using HTML, CSS and JQuery without any frameworks.
+                                        Click the image or link below to see the whole  website.
+                                      </p>
+                                      
+                                      <p>
+                                        <img id="MyProject-Image1"  src="Images/RedArrow.png" alt="...">   
+                                        <a id="MyProject-text1" href="https://nimilowizard.github.io/Main/Index.html" 
+                                            target="_blank">FullStack Online Learning School</a>
+                                    </p>
+                                  </div>
+
+                                  <div id="WebDev-Item2">
+
+                                    
+                                    <div class="row" id="Project-SubImg">
+                                     
+                                      <div class="card" id="card">
+                                         <div class="box" id="box">
+                                          <a  href="https://onlineassessment.nimiloocdol.repl.co/index.php" target="_blank">
+                                            <img src="Images/OnlineExamPHP.png" alt="..." class="img-fluid" alt="..."></a>
+                                          </div>
+                                      </div>
+
+                                    </div>
+                                    
+                                    <p class="text-white"> A simple website page for Exam/Quizes which will also
+                                     serve as a reviewer. Created using HTML, CSS, JQuery and PHP. Click the image 
+                                     or link below to see the website page.
+                                    </p>
+                                    <p>
+                                      <img id="MyProject-Image1"  src="Images/RedArrow.png" alt="...">   
+                                      <a id="MyProject-text1" href="https://onlineassessment.nimiloocdol.repl.co/index.php" 
+                                          target="_blank">Online Assessment</a>
+                                    </p>
+                                  </div>
+
+                              </div>
+
+                      </div>
+                  </div>
+                </div>    
+              
+              
+                <div class="col-12 col-md-12 col-lg-4" >
+                  <div class="card text-white text-center  pb-2">
+
+                    <div class="card-body text-dark" id="card-body2">
+
+                            <div class="img-area mb-4">
+                                  <img src="Images/Programmer1.png" class="img-fluid" alt="...">
+                            </div>
+                           
+                            <h3 class="card-title  text-white" style="text-decoration: underline;"> Software Development  </h3>
+                           
+                            <p class="lead text-white"> Basically, I useed C# and Vb.net for GUI and MySQL
+                              for my database. Feel free to check sample program I created below.
+                            </p>
+
+
+ <!---------------------------Sotware Dev Learn More button------------------------------>   
+
+                            <button  onclick="AboutFunction('Software-Dev')" class="about-drop w3-button w3-block w3-center w3-large bg-warning text-dark" 
+                              style="font-weight:bold;">Learn More...</button>
+
+                              <div id="Software-Dev" class="w3-container w3-hide">
+
+                                    <div class="SoftDev-Item1">
+                                      <div class="row" id="Project-SubImg">
+                                        <div class="card" id="card">
+                                           <div class="box" id="box">
+                                              <img src="Images/POS1.png" alt="..." class="img-fluid" alt="...">
+                                            </div>
+                                        </div>
+                                      </div>
+                                      
+                                      <p class="text-white"> This is a Desktop Application for Sales and Inventory System
+                                        using C# and MySQL, still <span>UNDER CONSTRUCTION</span>
+                                      </p>
+                                      
+                                     <div id="POStext">
+                                        <img id="MyProject-Image1"  src="Images/RedArrow.png" alt="..." >   
+                                           POS Sales and Inventory System
+                                      </div>
+                                   </div>   
+                              </div>
+                    </div>
+
+                  </div>
+                </div>    
+                
+                <div class="col-12 col-md-12 col-lg-4" >
+                  <div class="card text-white text-center b pb-2">
+
+                        <div class="card-body text-dark" id="card-body3">
+
+                                <div class="img-area mb-4">
+                                  <img src="Images/GraphicsDesignImage.png" class="img-fluid" alt="...">
+                                </div> 
+
+                                <h3 class="card-title text-white" style="text-decoration: underline;"> Graphics Design  </h3>
+                               
+                                <p class="lead text-white"> Whenever I create a design i use Photoshop or Canva
+                                    to give me more options depending on the requirements of the project
+                                  </p>
+
+
+ <!---------------------------Graphics Designer Learn More button------------------------------>   
+
+                                <button  onclick="AboutFunction('Graphix-Dsgn')" class="about-drop w3-button w3-block w3-center w3-large bg-warning text-dark" 
+                                style="font-weight:bold;">Learn More...</button>
+
+                                <div id="Graphix-Dsgn" class="w3-container w3-hide">  
+
+                                      <div id="GraphicsDsgn-Item1">
+                                        <div class="row" id="Project-SubImg">
+                                          <div class="card" id="card">
+                                             <div class="box" id="box">
+                                                <img src="Images/Congratulations_Sample.jpg" alt="..." class="img-fluid" alt="...">
+                                             </div>
+                                          </div>
+                                        </div>
+                                        
+                                        <p id="BannerDesc" class=" text-white"> A Graduation Banner with the size of 75x48 inches and
+                                           5400x3400 pixels ready for printing
+                                        </p>
+                                        
+                                        <div id="Bannertext">
+                                          <div id="Graphicstext">
+                                             <img id="MyProject-Image1"  src="Images/RedArrow.png" alt="...">   
+                                              Graduation/Congratulation Banner
+                                        </div>
+                                                                     
+                                </div>
+                        </div>
+                  </div>
+                </div>
+                  
+          </div>
+      
+    </div>
+</section>
+<!------------------------------------------Team ----------------------------------------->
+
+<section class="Team" id="Team section-padding">
+    <div class="Container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-header text-white text-center pb-5">
+            <h2 class="Title">Team Members</h2>
+            <p>An Organization with great team member survives the tide and stand still
+              amid challenges.</p>
+            <p> Meet the superb persona that comrpises the backbone of this 
+              Organization.</p>
+            
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="Images/per1.png" class="img-fluid rounded-circle " alt="...">
+                        <h3 class="card-title py-2">Jack Wilson</h3>
+                        <p class="card-text"> Junior Developer</p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center">
+                      <div class="card-body">
+                        
+                        <img src="Images/per2.png" class="img-fluid rounded-circle " alt="..." >
+                        <h3 class="card-title py-2">Mike Dimaapi</h3>
+                        <p class="card-text"> Senior Developer</p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center">
+                      <div class="card-body">
+                        <img src="Images/per3.png" class="img-fluid rounded-circle " alt="...">
+                        <h3 class="card-title py-2">Crystal Tan</h3>
+                        <p class="card-text"> UI/UX Designer</p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                      </div>
+                  </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                  <div class="card text-center">
+                      <div class="card-body">
+                        <img src="Images/per4.png" class="img-fluid rounded-circle " alt="...">
+                        <h3 class="card-title py-2">Jade Lucy</h3>
+                        <p class="card-text"> Graphics Designer</p>
+
+                        <p class="socials">
+                            <i class="bi bi-twitter text-dark mx-1"></i>
+                            <i class="bi bi-facebook text-dark mx-1"></i>
+                            <i class="bi bi-linkedin text-dark mx-1"></i>
+                            <i class="bi bi-instagram text-dark mx-1"></i>
+                        </p>
+                      </div>
+                  </div>
+             </div>
+
+
+      </div> 
+
+    </div>
+
+</section>
+<!------------------------------------------ Inquiry ----------------------------------------->
+<section class="Inquiry" id="Inquiry">  
+  <div class="max-width">
+      
+        <div class="Title text-center text-white" >
+          <h2 >Inquiry</h2>
+        </div> 
+
+        <div class="Inquiry-content">
+
+          <div class="class=col-12 col-md-12 col-lg-4 left">
+
+              <div class="GetInTouch" id="GetInTouch">Get Intouch Today</div> 
+                  <p id="text">
+                    If you want to know more info about me or any questions, please just leave
+                    a message in the comment section provided in on the right side panel. Thank you!
+                  </p>
+
+                  <div class="icons">
+
+                        <div class="row">
+                              <img  src="Images/address-book-solid.svg" alt="...">
+                              <div class="info">
+                                  <div class="head">Company Name</div>
+                                  <div class="subhead">Official Website  </div>
+                              </div>
+                        </div>      
+
+                        <div class="row">
+                            <img  src="Images/envelope-open-text-solid.svg" alt="...">
+                              <div class="info">
+                                  <div class="head">Address</div>
+                                  <div class="subhead">Taguig, Philippines</div>
+                              </div>
+                        </div>
+
+                        <div class="row">
+                            <img  src="Images/map-marked-alt-solid.svg" alt="...">
+                              <div class="info">
+                                  <div class="head">Email Me </div>
+                                  <div class="subhead">ncowork2020@gmail.com</div> 
+                              </div>
+                        </div>
+
+                  </div>
+
+          </div>
+        
+          <div class="class=col-12 col-md-12 col-lg-6  right">
+              <div class="Msg-Ing" id="text">Message Us</div>                        
+                  <form action="#" class="FormInquiry">
+                      <div class="fields">
+                          <div class="field name">
+                              <input type="text" placeholder="Name" required>
+                          </div>
+                          <div class="field email">
+                              <input type="email" placeholder="email" required >
+                          </div>
+                      </div>
+                      <div class="field">
+                              <input type="text" placeholder="Subject" required>
+                      </div>
+                      <div class="field textarea">
+                           <textarea cols="30" rows="10" placeholder="Message"> </textarea>
+                      </div>
+                      <div class="button">
+                      <button type="submit">Send Message</button>
+                      </div>
+                  </form>
+
+              </div>
+          
+          </div>
+  </div>
+
+</section>
+</div>  
+
+<!------------------------------------------Footer----------------------------------------->
+
+<footer>
+        <p>Developed by: <span><a href="https://www.facebook.com/profile.php?id=100040160618866&mibextid=ZbWKwL" 
+          target="_blank"> Nimilo Ocdol</a></span> | &copy; 2023 All Rights Reserved </p>
+</footer>
+
+
+
+<!------------------------------------------Script----------------------------------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <script src="Js/JScript_3.5.1.js"></script>
+    <script src="Js/Main_Script.js"></script>
+    <script src="Js/vanilla-tilt.js"></script>
+    <script src="Js/Scroll_Reveal.js"></script>
+
+
+    <script src="/_next/static/chunks/8169-453218710ad469c5.js"></script>
+
+    <script>
+   
+
+        function AboutFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else {
+            x.className = x.className.replace(" w3-show", "");
+            setTimeout(id, 3500)
+          }
+         } 
+
+         const myCarousel = document.getElementById('myCarousel')
+
+          myCarousel.addEventListener('slide.bs.carousel', event => {
+            // do something...
+          })
+
+          
+    </script>
+
+
+</body>
+</html>
