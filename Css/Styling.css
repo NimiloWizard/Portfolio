@@ -170,7 +170,7 @@ section::before{
 #MyName h1{
     font-family:'Courier New', Courier, monospace;
     color: rgb(54, 96, 12);
-    padding-top: 30px; 
+    padding-top: 50px; 
     padding-bottom: 10px;
     font-weight:bolder;
     letter-spacing: 1px;
