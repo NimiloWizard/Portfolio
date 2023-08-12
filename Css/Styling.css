@@ -734,23 +734,24 @@ footer span a:hover{
 @media only screen and (min-width: 456px) and (max-width: 525px){
 
     .imge-Container .About-image{
+	
         height: 400px;
         margin-left: 20px;
     }
 
     .navbar-toggler{
-        margin-right: 100px;
+        margin-right: -20px;
     }
 
 @media only screen and (min-width: 350px) and (max-width: 455px){
 
     .imge-Container #About-image{
         height: 400px;
-        margin-left: 0px;
+       margin-right: -20px;
     }
 
     .navbar-toggler{
-        margin-right: 100px;
+        margin-right: -20px;
     }
 
 }
