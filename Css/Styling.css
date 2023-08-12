@@ -744,7 +744,7 @@ footer span a:hover{
 
 @media only screen and (min-width: 350px) and (max-width: 479px){
 
-    .imge-Container .About-image{
+    .imge-Container #About-image{
         height: 400px;
         margin-left: 0px;
     }
