@@ -169,7 +169,7 @@ section::before{
 
 #MyName h1{
     font-family:'Courier New', Courier, monospace;
-    color: rgb(54, 96, 12);
+    color: rgb(126, 243, 9);
     padding-top: 50px; 
     padding-bottom: 10px;
     font-weight:bolder;
@@ -279,7 +279,7 @@ section::before{
 .list  p{
     padding: 10, 10px, 0, 0px;
     margin-left: 30px;
-    font-size: 15px;
+    font-size: 16px;
     color: rgb(184, 189, 187);
     font-weight: bold;
     
@@ -289,7 +289,7 @@ section::before{
     margin-bottom: 35px;
     margin-left: 100px;
     font-size: 12px;
-    color: rgb(64, 107, 8);
+    color: rgb(131, 222, 11);
 }
 
 .carousel-item .d-block{
