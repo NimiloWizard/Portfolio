@@ -1,0 +1,1588 @@
+*{
+    font-family: Montserrat;
+    
+}
+
+body{
+    background: f1fbff;
+    position: relative;
+}
+
+.Title{
+    font: 30px;
+    font-weight: bold;
+}
+
+/*-----------------------------------------Background Setting--------------------------*/
+
+.section-padding{
+    padding: 90px 40px;
+   
+}
+
+section {
+    
+	padding: 20px;
+    display: flex;
+	/*background: linear-gradient(rgba(250, 252, 252, 0.986), rgba(253, 252, 252, 0.3));  */
+	background: url("../Images/AIWallpaper10.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+    isolation: isolate;
+
+    
+}
+section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        0deg,
+         rgb(0 0 0 /.8),
+         rgb( 0 0 0 /.5)
+    );
+    
+}
+
+
+.card{
+    backdrop-filter: blur(14px);
+    background-color: rgba(251, 240, 240, 0.2);
+    box-shadow: 15px 15px 40px rgba(59, 56, 56, 0.15);
+}
+
+.card .card-body{
+   
+    box-shadow: 16px 14px 20px rgb(126, 124, 124);
+    position: relative;
+    overflow: hidden;
+}
+
+
+.h1{
+    color: rgb(247, 246, 246);
+}
+
+.h2{
+    color: black;
+}
+
+
+/*-----------------------------------------NavBar--------------------------*/
+.navbar{
+    background: url("../Images/AIWallpaper10.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;position: relative;
+    isolation: isolate;
+    
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(
+        0deg,
+         rgb(0 0 0 /.6),
+         rgb( 0 0 0 /.8)
+    );
+}
+
+.navbar p{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(241, 243, 242);
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-left: -80px;
+}
+
+.navbar  .navbar-nav{
+    margin-right: -75px;
+}
+
+
+.navbar  .nav-item a:hover{
+    color: blue;
+}
+
+
+
+.navbar  .nav-item a{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(251, 248, 248);
+    
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-nav a li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+   
+   
+    translate: var(--_translate,0);
+    scale: var(--_width,0) 1;
+    transition: scale 300ms, 500ms;
+
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+nav ul li a::after{            /*  will put underline on the menu list */
+    content: '';                 /*  In this case, the unerline color is white */
+    width: 0;                    /* You need to put "position: relative" to  "nav ul li a"  */  
+    height: 1px;
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #9ed3f4;
+    transition: width 0.3s;
+  }
+  
+  nav ul li a:hover::after{
+      width: 50%;
+  }
+
+
+.navbar-light .navbar-brand{
+    color: rgb(252, 250, 250);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: black;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: black;   
+}
+
+/*-----------------------------------------My Name ----------------------------*/
+
+
+#MyName h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-family:'poppin'sans-serif;
+    color: transparent;
+    padding-top: 1px;
+    font-weight:bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    
+    -webkit-text-stroke: 1px #3dd60f;
+    background: url("../Images/back2.png");
+    -webkit-background-clip: text;
+    background-position: 0 0; 
+    animation: back 20s linear infinite;
+
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+#Position h4{
+   padding-bottom: -10px ;
+} 
+
+.internal_Container{ 
+    color: rgb(146, 4, 130);       /* set to position the container of clock to desired location */
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: -60px;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    position: relative;
+ }
+ .internal_Container .clock{  /* set the postion of the clock inside the container*/  
+    width: 100%;
+    height: 100%;
+    background: rgba(187, 3, 187, 0.11);
+    border-radius: 10px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+ }
+ 
+ .clock span{
+   font-size: 20px;
+   width: 30px;
+   display: inline-block;
+   text-align: center;
+   position: relative;
+   color: rgb(220, 252, 10);
+ }
+ .clock span::after{
+   
+   font-size: 13px;
+   position: absolute;
+   bottom: -12px;
+   left: 50%;
+   transform: translateX(-50%);
+ }
+ 
+ #hrs::after{
+   content: 'Hours'
+   
+ }
+ 
+ #mins::after{
+   content: 'Mins'
+ }
+ #secs::after{
+   content: 'Secs'
+ }
+ 
+ 
+
+/*-----------------------------------------About--------------------------*/
+
+
+.imge-Container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    background-color: none;
+    
+}
+.imge-Container .About-image{
+    height: 60px;
+    width: 450px;
+    margin-left: 0px;
+    display: flex;
+    position: relative;
+    transition: .3s;
+    margin-bottom: 30px;
+    margin-top: 10px; 
+    
+}
+
+#Contact{
+    height: 550px;
+    width: 430px; 
+    background: rgba(0,0 ,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
+    transition: all ease .5s;
+    padding: 8px;
+}
+
+
+.About-image .inner-card{
+    height: 400px;
+    width: 300px;
+    
+    position: relative;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 50px ;
+    
+    
+}
+
+.About-image .inner-card .imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+    z-index: 10000;
+    transform-origin: top;
+}
+
+.About-image .inner-card:hover .imgbox{
+  transform: translatey(30px) scale(0.6);
+}
+
+.inner-card .imgbox #CenterPix{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    transition: .3s;
+    object-fit: cover;
+    filter: grayscale(100%);
+    z-index: 1; 
+    
+    
+}
+.inner-card .imgbox #RightPix{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    transition: .3s;
+    filter: grayscale(90%);
+    top:0px;
+}
+.inner-card .imgbox #LeftPix{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    transition: .3s;
+    filter: grayscale(90%);
+    top:0px;
+}
+
+.About-image .inner-card:hover #CenterPix {
+    
+    height: 100%;
+    transition: .7s;
+    filter: grayscale(0);  
+    transform: rotate(360deg);
+    
+}
+
+.imge-Container .About-image:hover #RightPix{
+    height: 100%;
+    transform: scale(1.03) rotate(12deg);
+    filter: grayscale(90%);
+}
+
+.imge-Container .About-image:hover #LeftPix{
+    height: 100%;
+    transform: scale(1.03) rotate(-12deg);
+    filter: grayscale(90%);
+}
+
+.About-image .inner-card .socialmedia{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    margin-left: -20px;
+    transform: translateY(100%);
+    transition: 0.5s;
+
+}
+.About-image .inner-card:hover .socialmedia{
+    transform: translateY(0);
+}   
+    
+.inner-card .socialmedia .social_icon{
+    position: relative;
+    display:flex;
+   
+}
+.social_icon li{
+    list-style: none;
+    margin: 4px;
+      
+}
+
+.social_icon li a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #294569;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+.social_icon li a:hover{
+  transform: rotate(360deg);
+  background: #03a9f4;
+}
+
+
+
+.social_icon li  #Fbcolor{
+    background: #294569;
+}
+.social_icon li  #LinkedIncolor{
+    background: #294569;
+}
+.social_icon li  #Twittercolor{
+    background: #294569;
+}
+.social_icon li  #Instagramcolor{
+    background: #7b0f76;
+}
+
+.social_icon li #Fbcolor:hover{
+    background: #03a9f4;
+}
+.social_icon li  #LinkedIncolor:hover{
+    background: #03a9f4;
+}
+.social_icon li a:hover #Twittercolor{
+    background: #03a9f4;
+}
+.social_icon li #Instagramcolor:hover{
+    background: #d119c5;
+}
+
+
+
+
+
+#about-contact-details{
+    position: absolute;
+    top: 26rem;
+    left: 6rem; 
+    line-height: normal;
+    padding-bottom: 0px;
+    
+    
+}
+
+
+#about-contact-details p{
+    color: rgb(255, 252, 251);
+    padding-bottom: 0px;
+    line-height: 0px;
+    padding: 0px;
+    padding-top: 15px;
+
+}
+
+#about-contact-details p span{
+    color: rgb(226, 80, 43);
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 0px;
+    line-height: 0px;
+   
+}
+#about-contact-details #email span{
+    color: rgb(40, 186, 101);
+    font-weight: 600;
+    font-size: 15px;
+   
+}
+#about-contact-details #email{
+    margin-bottom: 0px;
+}
+
+#about-contact-details #FB{
+    padding-top: -20px;
+}
+#about-contact-details img{
+    height: 10px;
+}
+
+
+.OnlineSchools {
+    width:430px;  
+    margin-left: -60px;  
+    align-content: center;
+    justify-content: space-between;
+    background: rgba(0,0 ,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
+    transition: all ease .5s;
+    padding: 8px;
+    top: 200px;
+    left: -40px; 
+    position: absolute;
+    
+}
+
+.OnlineSchools .row{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    
+}
+
+.OnlineSchools .School-Title{
+     text-align: center;
+     font-size: 25px;
+     font-weight: bold;
+     text-decoration: underline;
+     color: white;
+     padding: 15px 0px;
+     
+
+    -webkit-text-stroke: 1px #0f70b1;
+    background: url("../Images/back2.png");
+    -webkit-background-clip: text;
+    background-position: 0 0; 
+    animation: back 20s linear infinite;
+
+}
+.OnlineSchools .col {
+    padding-top: 10px;
+    width: 70px;
+    height: 70px;
+    
+}
+
+.OnlineSchools .col img{
+    
+    width: 70px;
+    height: 70px !important;
+    transition:  .08s;
+    transition: all ease .5s;
+}
+
+.OnlineSchools img:hover{
+    
+    background: rgba(248, 248, 245, 0.548);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
+    transform: scale(1.4);
+}
+
+
+.about-info  {
+   line-height: normal;
+}
+
+.about-info p {
+    color:white;
+    justify-content: space-between;
+    padding-top: 20px !important;
+}
+
+.about-info .about-drop{
+    flex-basis: 60%;
+    transition: all .40s ease; 
+    
+}
+
+.about-info .about-drop1{
+    color: blue;
+}
+
+.about-info ul{
+    padding-left: 30px;
+}
+
+.about-info #who span{
+    color: rgb(226, 80, 43);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.About .about-drop{
+   
+    box-shadow: 16px 14px 20px black;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.About .about-drop::before{
+   
+    content: "";
+    background-image: comic-gradient(
+       rgb(222, 228, 228) 20deg,
+        transparent 120deg
+    );
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    animation: rotate 2s linear infinite;
+    margin-bottom: 0px;
+}
+
+.Badge-Container{
+    width: 600px;
+}
+
+.Badge-Container .badges{
+    display: flex;
+    justify-content: center;
+
+}
+
+.Badge-Container .badges .col{
+
+   width: 250px;
+   margin-top: 30px;
+   padding-left: 130px;
+   justify-content: center;
+   text-align: center;
+   align-content: center ;
+   align-items: center;
+   flex-wrap: wrap;
+   
+}
+.Badge-Container .badges .col p{
+   word-break: break-all;
+   padding-left: 25px;
+}
+
+.Badge-Container .badges .col img{
+    height: 150px;
+    width: 150px;
+   
+    background: rgba(0,0 ,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
+    transition: all ease .5s;
+    padding: 8px;
+}
+.Badge-Container .badges .col img:hover{
+    transform: scale(1.5);
+    
+}
+
+.Badge-Container .Badge-Links-Validator{
+    margin-top: 10px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.Badge-Container .Badge-Links-Validator #Verifier{
+    padding-left: 50px;
+    width: 700px !important;
+   
+}
+
+.Badge-Container .Badge-Links-Validator #Verifier-Note{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding-right: 30px;
+   
+}
+.Badge-Container .Badge-Links-Validator #Verifier-Note p{
+    font-size: 8px;
+    color: rgb(241, 241, 109);
+    padding-top: 15px;
+}
+
+.Badge-Container .Badge-Links-Validator #Verifier-Note span{
+    color: rgb(235, 50, 9);
+    font-size: 12px !important;
+}
+.Verifier a:hover{
+    background: rgba(247, 246, 246, 0.2);
+    
+}
+
+#About p{
+    padding-top: 30px;
+    font-size: 15px;
+    position: relative;
+    flex-basis: 60%;
+    
+
+}
+
+
+/*-----------------------------------------Certificates--------------------------*/
+#CertificationSection .list  .Container h2{
+    text-align: center;
+    color: white;
+    padding-left: 100px;
+}
+
+.list .List-of-Certificate{
+    align-items: left;
+    margin-right: 100px ;
+    color: rgb(57, 16, 242);
+    padding-bottom: 30px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+
+.list  p{
+    padding: 10, 10px, 0, 0px;
+    margin-left: 30px;
+    font-size: 15px;
+    color: rgb(184, 189, 187);
+    font-weight: bold;
+    
+}
+.list #Schoolname{
+    padding-top: 0px;
+    margin-bottom: 35px;
+    margin-left: 100px;
+    font-size: 12px;
+    color: rgb(131, 222, 11);
+}
+
+.carousel-item .d-block{
+    height: 75vh;
+}
+
+.carousel-inner .carousel-item{
+    height: 85vh;
+    min-height: 280px;
+    padding-top: 30px;
+
+}
+
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30px;
+    left: 0;
+    background: rgba(0,0 ,0,0.2);
+    z-index: 1;
+}
+
+/*-----------------------------------------Services--------------------------*/
+
+
+#Services-col{
+    margin-right: 30px;
+}
+.Services .card-body{
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    font-size: 50px;
+    backdrop-filter: blur(14px);
+    
+    transition: all 0.3s ease;
+    
+}
+
+.Services .card-body:hover{
+    transform: scale(1.03); 
+}
+
+
+#Service-bg-image1 .box{
+    transition: all 0.3s ease;
+}
+#Service-bg-image1 .box:hover{
+    transform: translatey(-25px);
+}
+
+
+#Service-bg-image2 .box{
+    transition: all 0.3s ease;
+}
+#Service-bg-image2 .box:hover{
+    transform: translatey(-25px);
+}
+
+#Service-bg-image3 .box{
+    transition: all 0.3s ease;
+}
+#Service-bg-image3 .box:hover{
+    transform: translatey(-25px);
+}
+
+
+.Services .card{
+    box-shadow: 15px 15px 40px rgba(0,0 ,0,0.15);
+}
+
+.Services .lead {
+    font-size: 16px;   
+}
+
+#Services-btn {
+    border-bottom-right-radius: 40px;
+}
+
+
+/*-----------------------------------------My Projects---------------------------------*/
+
+.MyProject .lead{
+    font-size: 15px;
+}
+.img-area #Myproject-bg-1{
+    width: 500px;
+    border-top-left-radius: 20%;
+    background: url("../Images/WebDevImage.png") no-repeat center;
+}
+.MyProject .card-body .img-area{
+    transition: all 0.3s ease;
+}
+.MyProject .card-body .img-area:hover{
+   transform: scale(1.10);
+}
+
+.MyProject .card{
+    backdrop-filter: blur(14px);
+    background-color: rgba(255, 255, 255, 0.0);
+    box-shadow: 15px 15px 40px rgba(247, 244, 244, 0.15);
+}
+.MyProject .card-body{
+    
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    backdrop-filter: blur(14px);
+    background-color: transparent;
+    box-shadow: 15px 15px 45px rgba(0,0 ,0,0.12);
+   
+}
+
+.MyProject #WebDev-Item1 #card{
+
+    width: 180px;
+    align-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.MyProject #WebDev-Item1 #box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-content: center;
+    align-items: center;
+    background: transparent;
+}
+.MyProject #WebDev-Item1 #box img{
+    
+   margin-top: 20px;
+    margin-left: 50px;
+}
+.MyProject #WebDev-Item1 p span{
+    color: rgb(17, 140, 35);
+    font-size: 18px;
+    font-weight: bold;
+}
+.MyProject #WebDev-Item1 p{
+    padding-top: 20px;
+}
+.MyProject #WebDev-Item2 p{
+    padding-top: 20px;
+}
+.MyProject #WebDev-Item1 .box{
+    transition: all 0.3s ease;
+}
+.MyProject #WebDev-Item1 .box:hover {
+    transform: scale(1.3);
+    
+}
+.MyProject #WebDev-Item2 .box{
+    transition: all 0.3s ease;
+}
+.MyProject #WebDev-Item2 .box:hover{
+    transform: scale(1.3);
+}
+.MyProject #Software-Dev .box{
+    transition: all 0.3s ease;
+}
+
+.MyProject #Software-Dev .box:hover{
+    transform: scale(1.3);
+}
+
+#Software-Dev span{
+    color: rgb(220, 67, 7);
+}
+#Software-Dev #POStext{
+    color: blue;
+}
+
+.MyProject #Graphix-Dsgn .box img {
+    padding: 20PX;
+}
+.MyProject #GraphicsDsgn-Item1 .box{
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+.MyProject #GraphicsDsgn-Item1 .box:hover{
+    transform: scale(1.1);
+}
+
+.MyProject #Graphix-Dsgn #Bannertext{
+    color: blue;
+}
+.MyProject #Graphix-Dsgn.BannerDesc{
+    padding-top: 20px;
+}
+/*-----------------------------------------Team---------------------------------*/
+#Team  #row-container{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+  
+}
+/*---
+#Team .Container{
+    display: flex !important;
+}
+#Team  #row-container{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    width: 1100px !important;
+    position: relative !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    transform-style: preserve-3d !important;
+    perspective: 500px  !important;
+}
+#Team #row-container .card-box-body{
+   position: relative !important;
+   width: 275px !important;
+   height: 275px !important;
+   transition: 0.5s !important;
+   transform-style: preserve-3d !important;
+}
+
+#row-container card-box-body .img-box{
+   position: absolute !important;
+   top: 0 !important;
+   left: 0 !important;
+   height: 100% !important;
+   width: 100% !important;
+}
+--*/
+/*----------------------------------------- Inquiry -----------------------------------------*/
+
+
+.Inquiry {
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	border: dotted;
+    
+    
+}
+
+.Inquiry .title h2{ 
+   text-align: center;
+   font: 30px;
+   font-weight: bold;
+   color: white;
+}
+
+.Inquiry .form-Inquiry{
+    backdrop-filter: blur(3px);
+    height: 300px;
+    width: 620px !important;
+    border: rgb(98, 98, 98) solid;
+}
+.form-Inquiry .FormInquiry {
+    margin-left: 10px;
+}
+.Inquiry .Inquiry-content {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+.Inquiry .Inquiry-content .column {
+   width: calc(50% - 30px);
+}
+.Inquiry .Inquiry-content .column {
+	color: red;
+	margin: 10px 0;
+
+}
+.Inquiry .Inquiry-content .left p{
+	font-size: 15px;
+	text-align: justify;
+    font-weight: normal  !important;
+}
+.Inquiry .Inquiry-content .row{
+	display: flex;
+	height: 65px;
+	align-items: center;
+	justify-content: left;
+}
+.Inquiry .Inquiry-content .head{
+	color: red;
+	font-weight: 600;
+	padding: 5px 0;
+	
+
+}
+.Inquiry .Inquiry-content .subhead, #text{
+	font-weight: 600;
+	justify-content: left;
+    color: white;
+}
+
+.Inquiry .Inquiry-content .left img{
+	height: 3px;
+	width: 30px;
+    z-index: 3;
+   
+}
+
+.Inquiry .fields input{
+    background-color: transparent;
+}
+
+
+.Inquiry .field input{
+   background-color: transparent;
+   color: #f7f5f5;
+}
+.Inquiry .field textarea{
+   background-color: transparent;
+   color: #f7f5f5;
+}
+.Inquiry  button{
+   background-color: transparent;
+}
+
+.Inquiry .right form .fields{
+    display: flex;
+    width: 600px;
+    
+}
+.Inquiry .right form .field ,
+.Inquiry .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom:5px ;
+    width: 600px;
+    padding-left: 0px;;
+}
+.Inquiry .right .Msg-Ing{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 600px;
+    
+  }
+  .Inquiry .right .Msg-Ing p{
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+  }
+.Inquiry .right form .textarea {
+	height: 100px;
+	width: 600px !important;
+    padding-left: 50px !;
+}
+
+
+.Inquiry .right form .name{
+   margin-right: 10px;
+}
+.Inquiry .right form .email{
+   margin-left: 10px;
+}
+.Inquiry .right form .field input, 
+.Inquiry .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+.Inquiry .right form .field input:focus, 
+.Inquiry .right form .textarea textarea:focus{
+   border-color: rgb(255, 252, 252);
+   
+}
+.Inquiry .right form .textarea textarea{
+	margin-top: 30px;
+	resize: none;
+}
+.Inquiry .right form .button button{
+    backdrop-filter: blur(100%);
+	height: 50px;
+	width: 150px;
+	background: transparent;
+	color: rgb(133, 127, 127);
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 6px;
+	border-color: rgb(40, 39, 39);
+	cursor: pointer;
+    margin-left: 0px;
+    margin-top: 30px;
+
+}
+.Inquiry .right form .button button:hover{
+    backdrop-filter: blur(100%);
+    border-color: rgb(28, 27, 27);
+    color: rgb(183, 180, 180);
+   
+
+}
+
+.Inquiry #GetInTouch{
+    color:blue;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+/*-------------------------------------Styles for Footer Section---------------------------------*/
+
+footer {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	background: black;
+	color: white;
+	padding: 30px 25px;
+}
+footer span a{
+	color: red;
+}
+footer span a:hover{
+   text-decoration: underline;
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------->
+/*-------------------------------------------------------------------------------------------->
+/*-----------------------------------------Responsive (Media Query)---------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+     
+    
+    .carousel-caption{
+        bottom: 370px;
+    } 
+
+    .carousel-caption p{
+        width: 100%;
+    } 
+    
+    .card{
+        margin-bottom: 30px;
+        
+    }
+
+    .img-area img{
+        width: 100%;
+    }
+
+    .navbar p{
+       margin-left: 0px;
+    }
+    
+}    
+
+
+@media only screen and (max-width: 767px){
+
+    body{
+        overflow: hidden;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .navbar p{
+        margin-left: 0px;
+     }
+     
+
+   nav ul li a:hover::after{
+        width: 0%;
+    }
+    nav ul li{
+        margin-left: -60px;
+
+    }
+
+    #MyName h1{
+        font-size: 32px;
+        line-height: 30px;
+    }
+
+   #Position h4{
+        font-size: 16px;    
+   }
+   
+   .clock span{
+    font-size:10px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    color:yellow;
+  }
+  .clock span::after{
+    
+    font-size: 8px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(229, 246, 115);
+  }
+
+  #About-image{
+    height: 60px;
+  }
+  #Contact{
+    height: 420px;
+    width: 430px; 
+    background: rgba(0,0 ,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
+    transition: all ease .5s;
+    padding: 8px;
+}
+  .internal_Container{ 
+             
+        width: 50px;
+        height: 130px;
+        position: absolute;
+        top: 15px;
+        left: 17%;
+        transform: translate(-50%, -50%);
+        position: relative;
+        margin-top: 20px;
+             
+    }
+    
+
+    .inner-card .imgbox #LeftPix{
+        width: 240px !important; 
+        height: 250px !important;
+
+    }
+    .inner-card .imgbox #RightPix{
+        width: 240px !important; 
+        height: 250px !important;
+    }
+   
+ 
+  .inner-card .imgbox #CenterPix{
+    
+    width: 210px;
+    height: 350px;
+  }
+  
+  .imge-Container .inner-card{
+     
+    width: 210px;
+    height: 250px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    object-fit: cover;
+   
+  }
+
+  
+.About-image .inner-card .socialmedia{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin-top: 40px;
+    margin-left: -15px !important;
+
+}
+     
+  
+  .inner-card .socialmedia li a{
+     font-size: 1.2em;
+  }
+  
+  #about-contact-details{
+    position: absolute;
+    top: 20rem;
+    left: 3rem; 
+    padding-bottom: 0px;
+
+}
+
+
+
+#about-contact-details p{
+    color: rgb(255, 252, 251);
+    padding-bottom: 0px;
+    line-height: 0px;
+    padding: 0px;
+    padding-top: 15px;
+
+}
+#about-contact-details a{
+    font-size: 12px;
+}
+#about-contact-details {
+    font-size: 12px;
+}
+
+.OnlineSchools {
+    width:430px;  
+    margin-left: -60px;  
+    align-content: center;
+    justify-content: space-between;
+    padding: 8px;
+    top: 130px;
+    left: -40px; 
+    position: absolute;
+    
+}
+.OnlineSchools .row{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 300px;
+    padding-left: 30px;
+    padding-right: 0px;
+}
+.OnlineSchools .School-Title{
+    text-align: center !important;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    padding-left: 60px;
+    margin-left: 20px;
+}
+
+
+.OnlineSchools .col img{
+    
+    width: 70px;
+    height: 60px !important;
+    padding-left: -20px;
+    
+    
+}
+
+  #About-Gallery-Text{
+    font-weight: bold ;
+    color: white !important;
+    margin-top: -16rem;
+    margin-left: 110px;
+      
+  }
+
+.Badge-Container{
+    background: rgba(0,0 ,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
+    width: 400px;
+    
+}
+.Badge-Container .badges {
+    display: block;
+    justify-content: center;
+    margin-top: 20px;
+ }
+
+ .Badge-Container .badges .col {
+    font-size: 8px !important;
+    margin-left: 50px !important;
+ }
+ 
+ .Badge-Container .badges .col p{
+    
+    font-size: 8px !important;
+    margin-left: -90px !important;
+ }
+
+ .Badge-Container .badges .col img{
+    height: 100px;
+    width: 100px;
+    margin-top: 15px;
+    background: rgba(0,0 ,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
+    transition: all ease .5s;    
+}
+
+.Badge-Container .badges .col img:hover{
+    transform: scale(1.5);
+    
+}
+.Badge-Container .Badge-Links-Validator{
+    margin-top: 40px;
+    width: 250px;
+    display: block;
+    
+} 
+
+.Badge-Container .Badge-Links-Validator #Verifier{
+    text-align: center;
+    width: 250px !important;
+    font-size: 10px;
+    
+}
+
+
+.Badge-Container .Badge-Links-Validator #Verifier-Note{
+   
+    padding-left: 90px;
+   
+}
+.Badge-Container .Badge-Links-Validator #Verifier-Note p{
+    font-size: 8px;
+    color: rgb(241, 241, 109);
+    padding-top: 15px;
+}
+
+.imge-Container .about-info{
+    width: 370px;
+    padding-left: 50px ;
+}
+
+.about-info  {
+    line-height: normal;
+    padding-top: 300px;
+ }
+
+
+ /*-------------------------------------------------------------------------------------*/
+    
+  /*  ----------------------------------Gallery Responsive -------------------*/
+
+     /* ----------------------end of gallery -----------------------*/
+
+.Services .Container #Services-title{
+    margin-top: -10px !important;
+}
+.Services #Card-Service1{
+     margin-top: 5px !important;
+}
+
+.Services #Card-Service2{
+    margin-top: 30px !important;
+ }
+ .Services #Card-Service3{
+    margin-top: 30px !important;
+ }
+
+ .Inquiry-content .left{
+     width: 330px;
+ }
+
+                        /* --------------------------end of services -----------------------*/
+
+                         /*-------------------------------Certification ---------------------*/
+.CertificationSection .Title{
+    color: #f7f5f5;
+    padding-left: 80px;
+}
+                         /*----------------------end of certification ------------------*/
+
+ #MyProject .row #coloumn{
+    margin-bottom: 20px;
+ }
+
+ .Inquiry h2{
+    padding-right: 18rem ;
+    padding-bottom: 10px;
+ }
+
+ .Inquiry .right .Msg-Ing{
+     padding-right: 18rem ;
+     padding-top: 20px;
+ }
+
+
+ .Inquiry .form-Inquiry{
+    backdrop-filter: blur(3px);
+    height: 300px;
+    width: 330px !important;
+    border: rgb(98, 98, 98) solid;
+}
+
+.Inquiry .right form .fields{
+    
+    width: 300px;
+    
+}
+.Inquiry .right form .field{
+   
+    width: 300px;
+    
+}
+.Inquiry .right form .textarea textarea{
+	width: 300px;
+	
+}
+.Inquiry .right form .button button{
+    margin-left: 0px;
+
+}
+
+
+
+
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 620px){
+
+    .about-info #MyName{
+        margin-top: 20px;
+    }
+
+    .imge-Container .About-image{
+        height: 400px;
+        margin-left: 0px;
+    }
+
+    .navbar-toggler{
+        margin-right: 100px;
+    }
+
+}
