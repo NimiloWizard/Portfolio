@@ -1418,7 +1418,8 @@ footer span a:hover{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 20px 20px 50px rgba (0, 0, 0, .5);
-    width: 400px;
+    width: 300px;
+    margin-left: -10px;
     
 }
 .Badge-Container .badges {
@@ -1429,13 +1430,14 @@ footer span a:hover{
 
  .Badge-Container .badges .col {
     font-size: 8px !important;
-    margin-left: 50px !important;
+    margin-left: 0px !important;
+    padding-left: 50px;
  }
  
  .Badge-Container .badges .col p{
     
     font-size: 8px !important;
-    margin-left: -90px !important;
+    margin-left: -20px !important;
  }
 
  .Badge-Container .badges .col img{
