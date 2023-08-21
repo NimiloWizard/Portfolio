@@ -217,8 +217,8 @@ nav ul li a::after{            /*  will put underline on the menu list */
     width: 250px;
     height: 100px;
     position: absolute;
-    top: -60px;
-    left: 85%;
+    top: -110px;
+    left: 75%;
     transform: translate(-50%, -50%);
     position: relative;
  }
@@ -718,7 +718,7 @@ nav ul li a::after{            /*  will put underline on the menu list */
 
 /*-----------------------------------------Certificates--------------------------*/
 #CertificationSection .list  .Container h2{
-    text-align: center;
+    
     color: white;
     padding-left: 100px;
 }
@@ -1247,9 +1247,11 @@ footer span a:hover{
         font-size: 32px;
         line-height: 30px;
     }
-
+     
+    
    #Position h4{
-        font-size: 16px;    
+        font-size: 16px; 
+
    }
    
    .clock span{
@@ -1260,11 +1262,21 @@ footer span a:hover{
     position: relative;
     color:yellow;
   }
+  #About .internal_Container{
+    height: 20px;
+    margin-top: 100px;
+  }
+  .clock{
+    position: absolute;
+    height: 30px;
+    left: -150px;
+    top: -100px;
+  }
   .clock span::after{
     
     font-size: 8px;
     position: absolute;
-    bottom: -12px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     color: rgb(229, 246, 115);
@@ -1472,7 +1484,7 @@ footer span a:hover{
 
 .Badge-Container .Badge-Links-Validator #Verifier-Note{
    
-    padding-left: 90px;
+    padding-left: 100px;
    
 }
 .Badge-Container .Badge-Links-Validator #Verifier-Note p{
@@ -1519,9 +1531,22 @@ footer span a:hover{
                         /* --------------------------end of services -----------------------*/
 
                          /*-------------------------------Certification ---------------------*/
-.CertificationSection .Title{
+#CertificationSection .Title{
+  
     color: #f7f5f5;
-    padding-left: 80px;
+    width: 200px;
+    margin-left: 120px ;
+    
+}
+#CertificationSection div.h2{
+
+    width: 200px;
+    margin-left: 40px !important;
+    
+}
+.list {
+    width: 500px;
+    margin-left: -25px !important;
 }
                          /*----------------------end of certification ------------------*/
 
