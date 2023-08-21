@@ -4,7 +4,7 @@
 -moz-background-size: cover;
 -o-background-size: cover;
 
-/* ------------------------------------- Moon ------------------------ */
+/* ------------------------------------- Moon ----------------------
 
 #About .Container:before
 {
@@ -32,8 +32,8 @@ transform-origin: bottom;
 -o-transition: 1s;
 
 }
-
-/* ------------------------------------- SUN ------------------------ */
+-- */
+/* ------------------------------------- SUN ----------------------
 
 	
 	#Gallery:before
@@ -48,18 +48,23 @@ transform-origin: bottom;
 	width: 50%;
 	height: 50%;
 	background: url(/Images/Sun.png) no-repeat;
-	z-index: -10000;
+  -moz-background: url(/Images/Sun.png) no-repeat;
+  -webkit-background: url(/Images/Sun.png) no-repeat;
+	z-index: -10;
+  -webkit-z-index:-10;
+  -moz-z-index:-10;
 	background-size: auto 100%; 
 	-webkit-background-size: auto 100%;
-    -moz-background-size: auto 100%;
-    -o-background-size: auto 100%;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
 	transition: 1s;
 	
 	}
 	
 
 
-/* -------------------------------------clouds------------------------ */
+  -- */
+/* -------------------------------------clouds----------------------
 #Gallery .slider{
 
 overflow: hidden;
@@ -133,16 +138,9 @@ transition: 5s;
 
 }
 
-/* ----------------------- Flying Birds ---------------------*/
+/* ----------------------- Flying Birds -------------------
 
-#Gallery{
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  padding-top: 50px;
 
-}
 
 
 #Gallery .container{
@@ -155,11 +153,17 @@ transition: 5s;
 	width: 20%;
 	height: 20%;
 	animation: animate-bird1 10s linear infinite;
+  -webkit-animation: animate-bird1 10s linear infinite;
+  -moz-animation: animate-bird1 10s linear infinite;
+  -o-animation: animate-bird1 10s linear infinite;
 }
 
 #Gallery .bird-container2{
 	
 	animation: animate-bird 12s linear infinite;
+  -webkit-animation: animate-bird 12s linear infinite;
+  -moz-animation: animate-bird 12s linear infinite;
+  -o-animation: animate-bird 12s linear infinite;
 }
 
 #Gallery .bird{
@@ -167,22 +171,37 @@ transition: 5s;
 	width: 900px;
 	background-image: url(/Images/BirdsParallax.png);
 	background-size: auto 100%; 
+  -webkit-background-size: auto 100%; 
+  -moz-background-size: auto 100%; 
+  -o-background-size: auto 100%; 
 	animation: bird 2.5s 0.5s steps(10) infinite;
     padding-bottom: 10px;
     z-index: -5;
-  
+  -webkit-animation: bird 2.5s 0.5s steps(10) infinite;
+  -moz-animation: bird 2.5s 0.5s steps(10) infinite;
+  -o-animation: bird 2.5s 0.5s steps(10) infinite;
+
 }
 #Gallery .bird2{
-    height: 70px;
+  height: 70px;
 	width: 300px;
 	background-image: url(/Images/BirdsParallax.png);
 	background-size: auto 100%; 
+  -webkit-background-size: auto 100%; 
+  -moz-background-size: auto 100%; 
+  -o-background-size: auto 100%; 
 	animation: bird 2.5s 0.5s steps(10) infinite;
+  -webkit-animation: bird 2.5s 0.5s steps(10) infinite;
+  -moz-animation: bird 2.5s 0.5s steps(10) infinite;
+  -o-animation: bird 2.5s 0.5s steps(10) infinite;
   
 }
 
 #Gallery .bird2{
 	animation: bird 2.5s 1.5s steps(10) infinite;
+  -webkit-animation: bird 2.5s 1.5s steps(10) infinite;
+  -moz-animation: bird 2.5s 1.5s steps(10) infinite;
+  -o-animation: bird 2.5s 1.5s steps(10) infinite;
   
 }
 
@@ -192,7 +211,39 @@ transition: 5s;
 	}
 }
 
+@-webkit-keyframes bird{
+	100%{
+		background-position: -3600px 0;
+	}
+}
+
+@-moz-keyframes bird{
+	100%{
+		background-position: -3600px 0;
+	}
+}
+
 @keyframes animate-bird1{
+	0%{
+    transform: translate(-10%, -10%) scale(0.1) rotateY(0deg);
+		-webkit-transform: translate(-10%, -10%) scale(0.1) rotateY(0deg);
+    -moz-transform: translate(-10%, -10%) scale(0.1) rotateY(0deg);
+    -o-transform: translate(-10%, -10%) scale(0.1) rotateY(0deg);
+	}
+	50%{
+		transform: translate(600%, 40%) scale(0.)rotateY(20deg);
+    -webkit-transform: translate(600%, 40%) scale(0.)rotateY(20deg);
+    -moz-transform: translate(600%, 40%) scale(0.)rotateY(20deg);
+    -o-transform: translate(600%, 40%) scale(0.)rotateY(20deg);
+	}
+	100%{
+		transform: translate(1200%, -150px) scale(0.1) rotateY(0deg);
+    -webkit-transform: translate(1200%, -150px) scale(0.1) rotateY(0deg);
+    -moz-transform: translate(1200%, -150px) scale(0.1) rotateY(0deg);
+    -o-transform: translate(1200%, -150px) scale(0.1) rotateY(0deg);
+	}
+}
+@-webkit-keyframes animate-bird1{
 	0%{
 		transform: translate(-10%, -10%) scale(0.1) rotateY(0deg);
 	}
@@ -204,8 +255,27 @@ transition: 5s;
 	}
 }
 
+@-moz-keyframes animate-bird1{
+	0%{
+		transform: translate(-10%, -10%) scale(0.1) rotateY(0deg);
+	}
+	50%{
+		transform: translate(600%, 40%) scale(0.)rotateY(20deg);
+	}
+	100%{
+		transform: translate(1200%, -150px) scale(0.1) rotateY(0deg);
+	}
+}
+--*/
 /* -----------------------------------Start  Gallery Carousel -----------------------------*/
+#Gallery{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 50px;
 
+}
 
 #col-right{
   width: 900px;
@@ -234,7 +304,7 @@ transition: 5s;
   height: 350px !important;
   text-align: justify;
   border-radius: 10px;
-  padding-left: 20px;
+  margin-left: -40px;
   padding-top: 100px;
   transition: 0.5s;
   left: calc(50% - 110px);
@@ -327,19 +397,20 @@ transition: 5s;
   }
   #Gallery .item{
     position: absolute;
-    width: 200px !important;
-    height: 200px !important;
+    width: 90px !important;
+    height: 210px !important;
     text-align: justify;
     border-radius: 10px;
     padding: -10px;
     transition: 0.5s;
     left: calc(50% - 110px);
-    top: -60px !important;
+    top: -50px !important;
+    margin-left: 20px;
   }
 
   #Gallery .item img{
      height: 200px !important;
-     width: 200px !important;
+     width: 180px !important;
   }
 
   #Gallery #next, #prev{
