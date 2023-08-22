@@ -23,7 +23,7 @@
   	box-shadow: 0 0 0 10px #57d2ee44, 0 0 50px  rgb(85, 200, 246),
   	0 0 100px rgb(135, 206, 235);
   	animation: animate 30s linear infinite;
-  	animation-duration: calc(125s / var(--i));
+  	animation-duration: calc(300s / var(--i));
 }
 
 #About .Container .bubbles span:nth-child(even)
@@ -36,10 +36,10 @@
 @keyframes animate
 {
 	100%{
-		transform: translateY(500vh) scale(0.5);
+		transform: translateY(500vh) scale(0.4);
 	}
 	0%{
-		transform: translateY(-5vh) scale(0.6);
+		transform: translateY(-5vh) scale(0.5);
 	}
 }
 
