@@ -83,7 +83,7 @@
 	@keyframes animate
 	{
 		100%{
-			transform: translateY(100vh) scale(0.3);
+			transform: translateY(300vh) scale(0.3);
 		}
 		0%{
 			transform: translateY(-5vh) scale(0.2);
