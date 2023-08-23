@@ -59,8 +59,8 @@
 
 #About .Container .bubbles span{
 	position: relative;
-	width: 5px;
-	height: 3px;
+	width: 1px;
+	height: 1px;
 	background: rgb(243, 245, 246);
 	margin: 0 4px;
   	border-radius: 50%;
@@ -80,10 +80,10 @@
 @keyframes animate
 {
 	100%{
-		transform: translateY(500vh) scale(0.4);
+		transform: translateY(500vh) scale(0.2);
 	}
 	0%{
-		transform: translateY(-5vh) scale(0.5);
+		transform: translateY(-5vh) scale(0.2);
 	}
 }
 
