@@ -60,7 +60,7 @@
 #About .Container .bubbles span{
 	position: relative;
 	width: 5px;
-	height: 10px;
+	height: 3px;
 	background: rgb(243, 245, 246);
 	margin: 0 4px;
   	border-radius: 50%;
