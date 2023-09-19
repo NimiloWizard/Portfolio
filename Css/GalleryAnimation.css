@@ -180,6 +180,7 @@ transition: 5s;
   -webkit-animation: bird 2.5s 0.5s steps(10) infinite;
   -moz-animation: bird 2.5s 0.5s steps(10) infinite;
   -o-animation: bird 2.5s 0.5s steps(10) infinite;
+	z-index: 999;
 
 }
 #Gallery .bird2{
@@ -194,7 +195,7 @@ transition: 5s;
   -webkit-animation: bird 2.5s 0.5s steps(10) infinite;
   -moz-animation: bird 2.5s 0.5s steps(10) infinite;
   -o-animation: bird 2.5s 0.5s steps(10) infinite;
-  
+  z-index: 999;
 }
 
 #Gallery .bird2{
@@ -202,7 +203,7 @@ transition: 5s;
   -webkit-animation: bird 2.5s 1.5s steps(10) infinite;
   -moz-animation: bird 2.5s 1.5s steps(10) infinite;
   -o-animation: bird 2.5s 1.5s steps(10) infinite;
-  
+  z-index: 999;
 }
 
 @keyframes bird{
